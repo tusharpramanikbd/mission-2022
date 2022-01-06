@@ -64,15 +64,18 @@ Variables
  /*  global classes */
  
  .btn {
-	text-transform: uppercase;
-	padding: 0.5rem 2.5rem;
+	padding: 0.75rem 2.5rem;
 	display: inline-block;
-	font-weight: 700;
-	font-size: 1rem;
 	border: 2px solid transparent;
 	cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 	border-radius: var(--radius);
+	margin-bottom: 2rem;
+	background: linear-gradient(45deg, rgb(248, 104, 88), rgb(248, 104, 88));
+	color: var(--clr-white);
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	font-weight: normal;
  }
  .section-center{
 	width: 78vw;
@@ -80,11 +83,17 @@ Variables
 	max-width: 1170px;
 	min-height: 100vh;
  }
+ .section-container{
+	display: flex;
+ }
+ .custom-height{
+	min-height: auto;
+ }
  
  /* banner section */
- .banner-container{
-	display: flex;
+ .section-banner-container{
 	align-items: center;
+	justify-content: center;
  }
  .banner-left{
 	flex: 1;
@@ -94,14 +103,6 @@ Variables
  .banner-left p{
 	width: 80%;
 	margin-bottom: 1rem;
- }
- .banner-left a{
-	margin-bottom: 2rem;
-	background: linear-gradient(45deg, rgb(248, 104, 88), rgb(248, 104, 88));
-	color: var(--clr-white);
-	font-size: 0.9rem;
-	text-transform: capitalize;
-	font-weight: normal;
  }
  .banner-heading{
 	margin-bottom: 2rem;
@@ -125,8 +126,10 @@ Variables
  /* end of banner section */
  
  /* My Mission Section */
+ .section-mymission{
+	min-height: auto;
+ }
  .mymission-heading{
-	 margin-top: -1rem;
 	 margin-bottom: 2.5rem;
 	 text-align: center;
 	 font-family: var(--ff-secondary);
@@ -167,7 +170,58 @@ Variables
 	background-color: rgb(243, 225, 209);
 }
  /* End of My Mission Section */
- 
+
+ /* Section Limit */
+ .section-limit{
+	background-image: url("./images/shapes/shape-1.png");
+  background-repeat: no-repeat;
+	background-position: 5% 20%;
+	background-size: 15%;
+	margin-top: 5rem;
+ }
+ .limit-left{
+	 flex: 0.6;
+	 margin-right: 2.25rem;
+ }
+ .limit-right{
+	 flex: 1;
+	 margin-left: 2.25rem;
+	 margin-top: 2.5rem;
+ }
+ .section-limit-heading{
+	margin-bottom: 1rem;
+}
+ .limit-right p{
+	margin-bottom: 1rem;
+	line-height: 1.75;
+ }
+ /* End of Section Limit */
+
+ /* Section Global */
+ .section-global{
+	background-image: url("./images/shapes/shape-1.png");
+  background-repeat: no-repeat;
+	background-position: 95% 100%;
+	background-size: 15%;
+	margin-top: 5rem;
+ }
+ .custom-height-global{
+	 min-height: 70vh;
+ }
+ .global-left{
+	flex: 1;
+	margin-right: 2.75rem;
+	margin-top: 2.5rem;
+}
+.global-right{
+	flex: 0.625;
+	margin-left: 2.75rem;
+}
+.global-left p{
+	margin-bottom: 1rem;
+	line-height: 1.75;
+ }
+ /* End of Section Global */
  /* footer section */
  .section-footer{
  }
