@@ -81,19 +81,20 @@ Variables
 	width: 78vw;
 	margin: 0 auto;
 	max-width: 1170px;
-	min-height: 100vh;
+	min-height: auto;
  }
  .section-container{
 	display: flex;
  }
- .custom-height{
-	min-height: auto;
- }
+ .section-heading{
+	margin-bottom: 1rem;
+}
  
  /* banner section */
  .section-banner-container{
 	align-items: center;
 	justify-content: center;
+	min-height: 100vh;
  }
  .banner-left{
 	flex: 1;
@@ -126,9 +127,6 @@ Variables
  /* end of banner section */
  
  /* My Mission Section */
- .section-mymission{
-	min-height: auto;
- }
  .mymission-heading{
 	 margin-bottom: 2.5rem;
 	 text-align: center;
@@ -188,9 +186,6 @@ Variables
 	 margin-left: 2.25rem;
 	 margin-top: 2.5rem;
  }
- .section-limit-heading{
-	margin-bottom: 1rem;
-}
  .limit-right p{
 	margin-bottom: 1rem;
 	line-height: 1.75;
