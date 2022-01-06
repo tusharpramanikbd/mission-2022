@@ -12,58 +12,61 @@ Variables
 	--radius: 0.25rem;
 	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
- }
- 
- /*
- =============== 
- Global Styles
- ===============
- */
- 
- *,
- ::after,
- ::before {
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
- }
- body {
+}
+body {
 	font-family: var(--ff-primary);
 	background: var(--clr-white);
 	line-height: 1.5;
- }
- ul {
+}
+ul {
 	list-style-type: none;
- }
- a {
+}
+a {
 	text-decoration: none;
- }
- img {
+}
+img {
 	width: 100%;
 	display: block;
- }
- h1,
- h2,
- h3,
- h4 {
+}
+h1,
+h2,
+h3,
+h4 {
 	text-transform: capitalize;
- }
- h1{
+}
+h1{
 	font-size: 3.5rem;
- }
- h2 {
+}
+h2 {
 	font-size: 2.75rem;
- }
- h3{
+}
+h3{
 	font-size: 1.75rem;
- }
- p{
+}
+h4{
+	font-size: 0.9rem;
+}
+p{
 	color: rgba(0, 0, 0, 0.9);
- }
- 
+}
+
  /*  global classes */
- 
- .btn {
+
+.btn {
 	padding: 0.75rem 2.5rem;
 	display: inline-block;
 	border: 2px solid transparent;
@@ -76,92 +79,92 @@ Variables
 	font-size: 0.9rem;
 	text-transform: capitalize;
 	font-weight: normal;
- }
- .section-center{
+}
+.section-center{
 	width: 78vw;
 	margin: 0 auto;
 	max-width: 1170px;
 	min-height: auto;
- }
- .section-container{
+}
+.section-container{
 	display: flex;
- }
- .section-heading{
+}
+.section-heading{
 	margin-bottom: 1rem;
 	font-family: var(--ff-secondary);
 }
 .section-heading span{
 	color: rgb(248, 104, 88);
 }
- 
- /* banner section */
- .section-banner-container{
+
+/* banner section */
+.section-banner-container{
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
- }
- .banner-left{
+}
+.banner-left{
 	flex: 1;
 	padding-right: 3rem;
 	padding-top: 5rem;
- }
- .banner-left p{
+}
+.banner-left p{
 	width: 80%;
 	margin-bottom: 1rem;
- }
- .banner-heading{
+}
+.banner-heading{
 	margin-bottom: 2rem;
 	padding-left: 1rem;
 	border-left: 5px solid rgb(248, 104, 88);
 	line-height: 1;
 	font-family: var(--ff-secondary);
- }
- .banner-heading-top{
+}
+.banner-heading-top{
 	margin-bottom: 1rem;
- }
- .banner-heading-bottom{
+}
+.banner-heading-bottom{
 	color: rgb(248, 104, 88);
- }
- .banner-right{
+}
+.banner-right{
 	flex: .85;
- }
- .img-profile{
+}
+.img-profile{
 	width: 85%;
- }
- /* end of banner section */
- 
- /* My Mission Section */
- .mymission-heading{
-	 margin-bottom: 2.5rem;
-	 text-align: center;
-	 font-family: var(--ff-secondary);
- }
- .mymission-heading span{
-	 color: rgb(248, 104, 88);
- }
- .mymission-card{
-	 border-radius: 30px;
-	 padding: 2rem;
- }
- .mymission-card img{
-	 width: 50%;
-	 margin-bottom: 1rem;
- }
- .mymission-card h3{
+}
+/* end of banner section */
+
+/* My Mission Section */
+.mymission-heading{
+	margin-bottom: 2.5rem;
+	text-align: center;
+	font-family: var(--ff-secondary);
+}
+.mymission-heading span{
+	color: rgb(248, 104, 88);
+}
+.mymission-card{
+	border-radius: 30px;
+	padding: 2rem;
+}
+.mymission-card img{
+	width: 50%;
 	margin-bottom: 1rem;
- }
- .mymission-card-1{
-	 flex: 1;
-	 margin-right: 1rem;
-	 background-color: rgb(200, 241, 241);
- }
- .mymission-card-1 img{
+}
+.mymission-card h3{
+	margin-bottom: 1rem;
+}
+.mymission-card-1{
+	flex: 1;
+	margin-right: 1rem;
+	background-color: rgb(200, 241, 241);
+}
+.mymission-card-1 img{
 	margin-bottom: 1.5rem;
- }
- .mymission-card-1 h2{
+}
+.mymission-card-1 h2{
 	margin-bottom: 1rem;
- }
- .mymission-card-2{
+}
+.mymission-card-2{
 	flex: 1;
 	margin: 0 1rem;
 	background-color: rgb(241, 207, 203);
@@ -171,43 +174,43 @@ Variables
 	margin-left: 1rem;
 	background-color: rgb(243, 225, 209);
 }
- /* End of My Mission Section */
+/* End of My Mission Section */
 
- /* Section Limit */
- .section-limit{
+/* Section Limit */
+.section-limit{
 	background-image: url("./images/shapes/shape-1.png");
   background-repeat: no-repeat;
 	background-position: 5% 50%;
 	background-size: 15%;
 	margin-top: 5rem;
- }
- .limit-left{
-	 flex: 0.6;
-	 margin-right: 2.25rem;
- }
- .limit-right{
-	 flex: 1;
-	 margin-left: 2.25rem;
-	 margin-top: 2.5rem;
- }
- .limit-right p{
+}
+.limit-left{
+	flex: 0.6;
+	margin-right: 2.25rem;
+}
+.limit-right{
+	flex: 1;
+	margin-left: 2.25rem;
+	margin-top: 2.5rem;
+}
+.limit-right p{
 	margin-bottom: 1rem;
 	line-height: 1.75;
- }
- /* End of Section Limit */
+}
+/* End of Section Limit */
 
- /* Section Global */
- .section-global{
+/* Section Global */
+.section-global{
 	background-image: url("./images/shapes/shape-1.png");
   background-repeat: no-repeat;
 	background-position: 95% 100%;
 	background-size: 15%;
 	margin-top: 5rem;
- }
- .custom-height-global{
-	 min-height: 70vh;
- }
- .global-left{
+}
+.custom-height-global{
+	min-height: 70vh;
+}
+.global-left{
 	flex: 1;
 	margin-right: 2.75rem;
 	margin-top: 2.5rem;
@@ -219,15 +222,15 @@ Variables
 .global-left p{
 	margin-bottom: 1rem;
 	line-height: 1.75;
- }
- /* End of Section Global */
+}
+/* End of Section Global */
 
- /* Section Timeline */
- .section-timeline{
-	 margin-top: 3rem;
-	 margin-bottom: 3rem;
- }
- .mytimeline-heading{
+/* Section Timeline */
+.section-timeline{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.mytimeline-heading{
 	margin-bottom: 2.5rem;
 	text-align: center;
 	font-family: var(--ff-secondary);
@@ -274,6 +277,7 @@ Variables
 	border-radius: 50%;
 	color: white;
 	text-align: center;
+	padding-top: 2px;
 }
 .timeline-number-2{
 	position: absolute;
@@ -286,6 +290,7 @@ Variables
 	border-radius: 50%;
 	color: white;
 	text-align: center;
+	padding-top: 2px;
 }
 .timeline-number-3{
 	position: absolute;
@@ -298,6 +303,7 @@ Variables
 	border-radius: 50%;
 	color: white;
 	text-align: center;
+	padding-top: 2px;
 }
 .timeline-year{
 	margin-bottom: 1rem;
@@ -305,9 +311,23 @@ Variables
 .timeline-txt{
 	margin-bottom: 1rem;
 }
- /* End of Section Timeline */
+/* End of Section Timeline */
 
- /* footer section */
- .section-footer{
- }
- /* end of footer section */
+/* footer section */
+.section-footer{
+	background-color: black;
+	color: white;
+	padding: 3rem 0;
+	text-align: center;
+}
+.section-footer span{
+	color: rgb(248, 104, 88);
+}
+.section-footer h3{
+	margin-bottom: 1rem;
+	font-family: var(--ff-secondary);
+}
+.section-footer h4{
+	font-weight: normal;
+}
+/* end of footer section */
